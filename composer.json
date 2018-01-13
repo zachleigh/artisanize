@@ -1,0 +1,29 @@
+{
+    "name": "zachleigh/artisanize",
+    "description": "Use Laravel Artisan command syntax in any Symfony Console project.",
+    "keywords": [
+        "console",
+        "symfony",
+        "artisan",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "symfony/console": "^3.3",
+        "symfony/var-dumper": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Artisanize\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
