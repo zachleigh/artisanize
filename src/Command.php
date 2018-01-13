@@ -4,12 +4,12 @@ namespace Artisanize;
 
 use Artisanize\Input\Input;
 use Artisanize\Output\SymfonyOutput;
-use Symfony\Component\Console\Question\Question;
+use Symfony\Component\Console\Command\Command as SymfonyCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
-use Symfony\Component\Console\Command\Command as SymfonyCommand;
+use Symfony\Component\Console\Question\Question;
 
 abstract class Command extends SymfonyCommand
 {
@@ -161,7 +161,7 @@ abstract class Command extends SymfonyCommand
     {
         $reflection = new \ReflectionClass($input);
 
-        $method = 'add' . $reflection->getShortName();
+        $method = 'add'.$reflection->getShortName();
 
         if (method_exists($this, $method)) {
             $this->$method(...array_values($input->getAttributes()));

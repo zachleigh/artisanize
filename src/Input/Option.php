@@ -92,11 +92,11 @@ class Option extends Input
     public function getAttributes()
     {
         return [
-            'name' => $this->name,
-            'shortcut' => $this->shortcut,
-            'mode' => $this->mode,
+            'name'        => $this->name,
+            'shortcut'    => $this->shortcut,
+            'mode'        => $this->mode,
             'description' => $this->description,
-            'default' => $this->default,
+            'default'     => $this->default,
         ];
     }
 }

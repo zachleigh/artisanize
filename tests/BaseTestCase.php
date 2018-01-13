@@ -2,9 +2,9 @@
 
 namespace Tests;
 
+use PHPUnit\Framework\TestCase;
 use Tasks\Core\Application;
 use Tasks\Core\Output\Logger;
-use PHPUnit\Framework\TestCase;
 
 class BaseTestCase extends TestCase
 {
@@ -54,6 +54,7 @@ class BaseTestCase extends TestCase
      * Register a created file that should be unlinked during treardown.
      *
      * @param string $path
+     *
      * @return void
      */
     protected function registerCreatedFile($path)

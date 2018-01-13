@@ -1,4 +1,5 @@
 <?php
+
 namespace Tests\data;
 
 use Artisanize\Command;
@@ -30,21 +31,21 @@ class NullCommand extends Command
     public function addArgument($name, $mode = null, $description = '', $default = null)
     {
         $this->arguments[] = [
-            'name' => $name,
-            'mode' => $mode,
+            'name'        => $name,
+            'mode'        => $mode,
             'description' => $description,
-            'default' => $default,
+            'default'     => $default,
         ];
     }
 
     public function addOption($name, $shortcut = null, $mode = null, $description = '', $default = null)
     {
         $this->options[] = [
-            'name' => $name,
-            'shortcut' => $shortcut,
-            'mode' => $mode,
+            'name'        => $name,
+            'shortcut'    => $shortcut,
+            'mode'        => $mode,
             'description' => $description,
-            'default' => $default,
+            'default'     => $default,
         ];
     }
 
