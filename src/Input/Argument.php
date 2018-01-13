@@ -83,10 +83,10 @@ class Argument extends Input
     public function getAttributes()
     {
         return [
-            'name' => $this->name,
-            'mode' => $this->mode,
+            'name'        => $this->name,
+            'mode'        => $this->mode,
             'description' => $this->description,
-            'default' => $this->default,
+            'default'     => $this->default,
         ];
     }
 }
