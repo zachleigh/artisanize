@@ -4,4 +4,4 @@ build:
             version: 7.1
 
 filter:
-    excluded_paths: [tests/*, src/Stubs/*]
+    excluded_paths: [tests/*]
