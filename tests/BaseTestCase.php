@@ -3,52 +3,15 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Tasks\Core\Application;
-use Tasks\Core\Output\Logger;
 
 class BaseTestCase extends TestCase
 {
-    /**
-     * Application instance.
-     *
-     * @var Application
-     */
-    protected $app;
-
     /**
      * Files created during tests that should be unlinked during tear down.
      *
      * @var array
      */
     protected $createdFiles = [];
-
-    /**
-     * Setup the test case.
-     *
-     * @return void
-     */
-    protected function setUp()
-    {
-        // $this->app = require __DIR__ . '/../src/Core/bootstrap.php';
-
-        // app()->register('output', new Logger());
-    }
-
-    /**
-     * Tear down after tests have run.
-     *
-     * @return void
-     */
-    protected function tearDown()
-    {
-        // if ($this->app) {
-        //     $this->app->flush();
-
-        //     $this->app = null;
-        // }
-
-        // $this->removeRegisteredFiles();
-    }
 
     /**
      * Register a created file that should be unlinked during treardown.

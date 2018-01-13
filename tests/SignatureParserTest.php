@@ -8,6 +8,20 @@ use Tests\data\NullCommand;
 class SignatureParserTest extends BaseTestCase
 {
     /**
+     * Test command instance.
+     *
+     * @var NullCommand
+     */
+    protected $command;
+
+    /**
+     * Signature parser.
+     *
+     * @var SignatureParser
+     */
+    protected $parser;
+
+    /**
      * Setup the test class.
      *
      * @return void

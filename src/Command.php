@@ -65,10 +65,6 @@ abstract class Command extends SymfonyCommand
     {
         $this->output = new SymfonyOutput($output);
 
-        app()->register('output', function () {
-            return $this->output;
-        });
-
         $this->input = $input;
 
         if (method_exists($this, 'handle')) {
