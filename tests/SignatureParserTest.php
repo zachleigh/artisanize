@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use Tests\data\NullCommand;
 use Artisanize\SignatureParser;
+use Tests\data\NullCommand;
 
 class SignatureParserTest extends BaseTestCase
 {

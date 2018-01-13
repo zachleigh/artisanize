@@ -117,7 +117,7 @@ abstract class Input
     protected function calculateMode($class)
     {
         foreach ($this->modeArray as $constant) {
-            $this->mode = $this->mode | constant($class . '::' . $constant);
+            $this->mode = $this->mode | constant($class.'::'.$constant);
         }
 
         return $this;

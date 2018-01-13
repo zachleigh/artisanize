@@ -35,6 +35,7 @@ class Logger extends Output
         if (is_null($index)) {
             return $this->log;
         }
+
         return $this->log[$index];
     }
 
