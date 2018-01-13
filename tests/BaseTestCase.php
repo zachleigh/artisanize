@@ -33,20 +33,18 @@ class BaseTestCase extends TestCase
     protected function removeRegisteredFiles()
     {
         foreach ($this->createdFiles as $path) {
-            if (file_exists($path)) {
-                if (is_dir($path)) {
-                    $dir = new \DirectoryIterator($path);
+            if (is_dir($path)) {
+                $dir = new \DirectoryIterator($path);
 
-                    foreach ($dir as $file) {
-                        if (!$file->isDot()) {
-                            unlink($file->getPathname());
-                        }
+                foreach ($dir as $file) {
+                    if (!$file->isDot()) {
+                        unlink($file->getPathname());
                     }
-
-                    rmdir($path);
-                } else {
-                    unlink($path);
                 }
+
+                rmdir($path);
+            } elseif (file_exists($path)) {
+                unlink($path);
             }
         }
     }
