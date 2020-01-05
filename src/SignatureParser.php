@@ -2,8 +2,8 @@
 
 namespace Artisanize;
 
-use Artisanize\Input\Argument;
 use Artisanize\Input\Option;
+use Artisanize\Input\Argument;
 
 class SignatureParser
 {
