@@ -4,12 +4,12 @@ namespace Artisanize;
 
 use Artisanize\Input\Input;
 use Artisanize\Output\SymfonyOutput;
-use Symfony\Component\Console\Command\Command as SymfonyCommand;
+use Symfony\Component\Console\Question\Question;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Question\ConfirmationQuestion;
-use Symfony\Component\Console\Question\Question;
+use Symfony\Component\Console\Command\Command as SymfonyCommand;
 
 abstract class Command extends SymfonyCommand
 {
