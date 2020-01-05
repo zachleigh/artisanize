@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use Artisanize\SignatureParser;
 use Tests\data\NullCommand;
+use Artisanize\SignatureParser;
 
 class SignatureParserTest extends BaseTestCase
 {
@@ -26,7 +26,7 @@ class SignatureParserTest extends BaseTestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
